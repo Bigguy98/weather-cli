@@ -3,9 +3,9 @@
 This project is a CLI (command line interface) to get weather of cities around the world, written in Golang.
 
 Some details about it:
-- Using [cobra]([url](https://github.com/spf13/cobra)) lib to create CLI in easy way
-- Using [termui]([url](https://github.com/gizak/termui)) lib to showing charts on console
-- Calling [Free Weather APIs]([url](https://open-meteo.com/)) to get city location & weather data 
+- Using [cobra](https://github.com/spf13/cobra) lib to create CLI in easy way
+- Using [termui](https://github.com/gizak/termui) lib to showing charts on console
+- Calling [Free Weather APIs](https://open-meteo.com/) to get city location & weather data 
 
 ## Demo
 
