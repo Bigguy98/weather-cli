@@ -18,5 +18,5 @@ Some details about it:
 To build cli app, run this command:
 > go build -o bin/weather-cli main.go
 
-To run builded app:
+To run app:
 > bin/weather-cli [command]
