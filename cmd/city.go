@@ -12,8 +12,8 @@ import (
 // cityCmd represents the city command
 var cityCmd = &cobra.Command{
 	Use:   "city",
-	Short: "A brief description of your command",
-	Long: `Manage your favourite cities in the world.
+	Short: "Manage a list of your favourite cities in the world.",
+	Long: `Manage a list your favourite cities in the world.
 
 You can add, remove and list all your favourite city with subcommands below.`,
 	Run: func(cmd *cobra.Command, args []string) {

@@ -12,9 +12,11 @@ import (
 // showCmd represents the show command
 var showCmd = &cobra.Command{
 	Use:   "show",
-	Short: "A brief description of your command",
-	Long: `Show detail weather for cities you have save:
-	
+	Short: "Show current detail weather for city/cities you like",
+	Long: `Show current detail weather for cities you have like:
+
+You can use 'weather-cli show' to get weather for all cities
+Or use 'weather-cli show [city name] to get weather of a city you choose'
 To list all saved city, run command 'weather-cli city list'
 	`,
 	Run: func(cmd *cobra.Command, args []string) {
@@ -30,13 +32,4 @@ To list all saved city, run command 'weather-cli city list'
 func init() {
 	rootCmd.AddCommand(showCmd)
 
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// showCmd.PersistentFlags().String("foo", "", "A help for foo")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// showCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }

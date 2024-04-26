@@ -69,6 +69,7 @@ func AddCity(cityName string) {
 				Population: fmt.Sprintf("%v", responseCity.Results[0].Population),
 			}
 			saveToFile(city)
+			fmt.Printf("Adding city %v success!\n", cityName)
 		}
 
 	}
