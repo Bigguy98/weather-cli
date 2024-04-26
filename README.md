@@ -4,7 +4,7 @@ This project is a CLI (command line interface) to get weather of cities around t
 
 Some details about it:
 - Using [cobra](https://github.com/spf13/cobra) lib to create CLI in easy way
-- Using [termui](https://github.com/gizak/termui) lib to showing charts on console
+- Using [termui](https://github.com/gizak/termui) lib to show charts on console
 - Calling [Free Weather APIs](https://open-meteo.com/) to get city location & weather data 
 
 ## Demo
