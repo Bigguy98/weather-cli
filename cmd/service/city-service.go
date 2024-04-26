@@ -40,6 +40,13 @@ func prettyPrint(i interface{}) string {
 }
 
 func AddCity(cityName string) {
+	// check if city already exist
+	city := getCityByName(cityName)
+	if (City{}) != city {
+		fmt.Printf("City %v already exist on list. Run 'weather-cli city list' to view!\n", cityName)
+		return
+	}
+
 	url := fmt.Sprintf("https://geocoding-api.open-meteo.com/v1/search?name=%v&count=1&language=en&format=json", cityName)
 
 	req, _ := http.NewRequest("GET", url, nil)

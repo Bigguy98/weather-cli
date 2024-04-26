@@ -42,8 +42,8 @@ func showCharts(avgHumidityPercent int, hourlyTemper []float64, hourlyWindSpeed 
 	defer ui.Close()
 
 	parag := widgets.NewParagraph()
-	parag.Text = fmt.Sprintf("Forecast hourly weather for %v (Press Q to exit)", cityName)
-	parag.SetRect(20, 0, 100, 1)
+	parag.Text = fmt.Sprintf("Forecast hourly weather of %v for next 50 hours (Press Q to exit)", cityName)
+	parag.SetRect(15, 0, 100, 1)
 	parag.Border = false
 
 	g1 := widgets.NewGauge()
